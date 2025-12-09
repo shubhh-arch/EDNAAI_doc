@@ -1,0 +1,31 @@
+cat > .gitignore <<'EOF'
+# Virtualenv
+.venv/
+venv/
+env/
+
+# Editor/OS
+.vscode/
+.DS_Store
+
+# Data, models, outputs
+blast+/
+reference_db/
+data/
+output/
+models/pretrained/
+*.npy
+*.pt
+*.h5
+*.ckpt
+*.exe
+*.ndb
+*.nsq
+*.nhr
+*.zip
+.env
+
+# Node/build
+node_modules/
+dist/
+EOF

@@ -1,0 +1,11 @@
+__pycache__
+*.pyc
+*.pyo
+.env
+.venv
+venv
+*.egg-info
+.git
+output
+data/*.large_fasta  # add big files you don't want to copy into image
+.DS_Store

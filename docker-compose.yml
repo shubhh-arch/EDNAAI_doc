@@ -1,0 +1,18 @@
+version: "3.8"
+services:
+  edna:
+    build: .
+    image: ednaai:latest
+    container_name: ednaai_app
+    volumes:
+      - ./data:/app/data:rw
+      - ./output:/app/output:rw
+      - ./models:/app/models:rw
+      - ./reference_db:/app/reference_db:rw
+      - ./requirements.txt:/app/requirements.txt:ro
+      - ./:/app:ro   # optional read-only copy of code; remove if you want live edit in container
+    ports:
+      - "8501:8501"
+    environment:
+      - PYTHONUNBUFFERED=1
+    tty: true
