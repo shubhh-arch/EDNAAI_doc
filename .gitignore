@@ -29,3 +29,4 @@ models/pretrained/
 node_modules/
 dist/
 EOF
+.git_broken/
